@@ -22,9 +22,15 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "anErrorHasOcurred":
+            MessageLookupByLibrary.simpleMessage("Ha occurrido un error."),
+        "emptyListMessage":
+            MessageLookupByLibrary.simpleMessage("¡Ups! No hay nada por aquí."),
         "home": MessageLookupByLibrary.simpleMessage("Inicio"),
         "loginWGoogle":
             MessageLookupByLibrary.simpleMessage("Iniciar sesión con google"),
-        "logout": MessageLookupByLibrary.simpleMessage("Cerrar sesión")
+        "logout": MessageLookupByLibrary.simpleMessage("Cerrar sesión"),
+        "retry": MessageLookupByLibrary.simpleMessage("Reintentar"),
+        "search": MessageLookupByLibrary.simpleMessage("Buscar")
       };
 }

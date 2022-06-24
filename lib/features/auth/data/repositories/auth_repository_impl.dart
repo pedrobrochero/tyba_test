@@ -36,7 +36,6 @@ class AuthRepositoryImpl implements AuthRepository {
 
       return Right(_userFromFirebaseData(firebaseUserData));
     } catch (e) {
-      print(e);
       return Left(UnknownFailure());
     }
   }

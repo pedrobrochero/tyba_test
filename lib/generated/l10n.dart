@@ -79,6 +79,46 @@ class S {
       args: [],
     );
   }
+
+  /// `Buscar`
+  String get search {
+    return Intl.message(
+      'Buscar',
+      name: 'search',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `¡Ups! No hay nada por aquí.`
+  String get emptyListMessage {
+    return Intl.message(
+      '¡Ups! No hay nada por aquí.',
+      name: 'emptyListMessage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ha occurrido un error.`
+  String get anErrorHasOcurred {
+    return Intl.message(
+      'Ha occurrido un error.',
+      name: 'anErrorHasOcurred',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Reintentar`
+  String get retry {
+    return Intl.message(
+      'Reintentar',
+      name: 'retry',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

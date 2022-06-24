@@ -1,6 +1,9 @@
 {
   "home": "Inicio",
   "logout": "Cerrar sesión",
-  "loginWGoogle": "Iniciar sesión con google"
-
+  "loginWGoogle": "Iniciar sesión con google",
+  "search": "Buscar",
+  "emptyListMessage": "¡Ups! No hay nada por aquí.",
+  "anErrorHasOcurred": "Ha occurrido un error.",
+  "retry": "Reintentar"
 }
