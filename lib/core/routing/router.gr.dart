@@ -15,7 +15,8 @@ import 'package:flutter/material.dart' as _i5;
 
 import '../../features/auth/presentation/pages/login_page.dart' as _i1;
 import '../../features/auth/presentation/pages/splashscreen.dart' as _i2;
-import '../../features/restaurant_search/presentation/pages/home.dart' as _i3;
+import '../../features/restaurant_search/presentation/pages/home_page.dart'
+    as _i3;
 
 class AppRouter extends _i4.RootStackRouter {
   AppRouter([_i5.GlobalKey<_i5.NavigatorState>? navigatorKey])

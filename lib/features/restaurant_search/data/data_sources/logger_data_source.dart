@@ -22,7 +22,7 @@ class LoggerDataSourceImpl implements LoggerDataSource {
   Future<List<Log>> getLogs() async {
     final oneTimeTasks = await sqlite.query(
       sqlite.logsTable,
-      orderBy: 'created_at',
+      orderBy: 'created_at desc',
     );
     return oneTimeTasks.map((e) => LogModel.fromJson(e).entity).toList();
   }

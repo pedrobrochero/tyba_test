@@ -19,4 +19,14 @@ class LoggerRepositoryImpl implements LoggerRepository {
       return Left(LoggerFailure());
     }
   }
+
+  @override
+  Future<Either<Failure, List<Log>>> getLogs() async {
+    try {
+      final logs = await _dataSource.getLogs();
+      return Right(logs);
+    } catch (e) {
+      return Left(LoggerFailure());
+    }
+  }
 }

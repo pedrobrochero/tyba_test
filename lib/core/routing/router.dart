@@ -2,7 +2,7 @@ import 'package:auto_route/auto_route.dart';
 
 import '../../features/auth/presentation/pages/login_page.dart';
 import '../../features/auth/presentation/pages/splashscreen.dart';
-import '../../features/restaurant_search/presentation/pages/home.dart';
+import '../../features/restaurant_search/presentation/pages/home_page.dart';
 
 @MaterialAutoRouter(
   replaceInRouteName: 'Page,Route',

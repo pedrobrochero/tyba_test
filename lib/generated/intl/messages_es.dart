@@ -26,11 +26,13 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Ha occurrido un error."),
         "emptyListMessage":
             MessageLookupByLibrary.simpleMessage("¡Ups! No hay nada por aquí."),
+        "history": MessageLookupByLibrary.simpleMessage("Historial"),
         "home": MessageLookupByLibrary.simpleMessage("Inicio"),
         "loginWGoogle":
             MessageLookupByLibrary.simpleMessage("Iniciar sesión con google"),
         "logout": MessageLookupByLibrary.simpleMessage("Cerrar sesión"),
         "retry": MessageLookupByLibrary.simpleMessage("Reintentar"),
-        "search": MessageLookupByLibrary.simpleMessage("Buscar")
+        "search": MessageLookupByLibrary.simpleMessage("Buscar"),
+        "searching": MessageLookupByLibrary.simpleMessage("Búsqueda")
       };
 }

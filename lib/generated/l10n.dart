@@ -119,6 +119,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Historial`
+  String get history {
+    return Intl.message(
+      'Historial',
+      name: 'history',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Búsqueda`
+  String get searching {
+    return Intl.message(
+      'Búsqueda',
+      name: 'searching',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

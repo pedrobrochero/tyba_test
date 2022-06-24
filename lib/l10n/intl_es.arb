@@ -5,5 +5,7 @@
   "search": "Buscar",
   "emptyListMessage": "¡Ups! No hay nada por aquí.",
   "anErrorHasOcurred": "Ha occurrido un error.",
-  "retry": "Reintentar"
+  "retry": "Reintentar",
+  "history": "Historial",
+  "searching": "Búsqueda"
 }

@@ -16,7 +16,10 @@ import '../features/restaurant_search/data/repositories/logger_repository.dart';
 import '../features/restaurant_search/data/repositories/search_restaurants_repository_impl.dart';
 import '../features/restaurant_search/domain/repositories/logger_repository.dart';
 import '../features/restaurant_search/domain/repositories/search_restaurants_repository.dart';
+import '../features/restaurant_search/domain/usecases/get_logs.dart';
 import '../features/restaurant_search/domain/usecases/search_restaurants.dart';
+import '../features/restaurant_search/presentation/bloc/history_cubit.dart';
+import '../features/restaurant_search/presentation/bloc/home_cubit.dart';
 import '../features/restaurant_search/presentation/bloc/restaurants_search_cubit.dart';
 import 'providers/sqlite_provider.dart';
 
@@ -38,9 +41,12 @@ Future<void> _init() async {
   sl.registerLazySingleton<GoogleSignInProvider>(GoogleSignInProviderImpl.new);
   //! Feature: Search restaurants
   // Bloc
+  sl.registerFactory(HomeCubit.new);
   sl.registerFactory(() => RestaurantsSearchCubit(sl()));
+  sl.registerFactory(() => HistoryCubit(sl()));
   // Usecases
   sl.registerLazySingleton(() => SearchRestaurants(sl(), sl()));
+  sl.registerLazySingleton(() => GetLogs(sl()));
   // Repos
   sl.registerLazySingleton<SearchRestaurantsRepository>(
       () => SearchRestaurantsRepositoryImpl(sl()));
