@@ -14,15 +14,10 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-Restaurant _$RestaurantFromJson(Map<String, dynamic> json) {
-  return _Restaurant.fromJson(json);
-}
-
 /// @nodoc
 mixin _$Restaurant {
   String get name => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   $RestaurantCopyWith<Restaurant> get copyWith =>
       throw _privateConstructorUsedError;
@@ -91,12 +86,9 @@ class __$$_RestaurantCopyWithImpl<$Res> extends _$RestaurantCopyWithImpl<$Res>
 }
 
 /// @nodoc
-@JsonSerializable()
+
 class _$_Restaurant implements _Restaurant {
   const _$_Restaurant({required this.name});
-
-  factory _$_Restaurant.fromJson(Map<String, dynamic> json) =>
-      _$$_RestaurantFromJson(json);
 
   @override
   final String name;
@@ -114,7 +106,6 @@ class _$_Restaurant implements _Restaurant {
             const DeepCollectionEquality().equals(other.name, name));
   }
 
-  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(name));
@@ -123,18 +114,10 @@ class _$_Restaurant implements _Restaurant {
   @override
   _$$_RestaurantCopyWith<_$_Restaurant> get copyWith =>
       __$$_RestaurantCopyWithImpl<_$_Restaurant>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_RestaurantToJson(this);
-  }
 }
 
 abstract class _Restaurant implements Restaurant {
   const factory _Restaurant({required final String name}) = _$_Restaurant;
-
-  factory _Restaurant.fromJson(Map<String, dynamic> json) =
-      _$_Restaurant.fromJson;
 
   @override
   String get name => throw _privateConstructorUsedError;

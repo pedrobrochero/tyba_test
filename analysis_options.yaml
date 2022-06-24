@@ -206,6 +206,7 @@ analyzer:
     - lib/flavors.dart
     - test/**/*.mocks.dart
   errors:
+    invalid_annotation_target: ignore # For freezed annotations
     missing_required_param: error
     missing_return: error
     parameter_assignments: error
