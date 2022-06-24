@@ -1,1 +1,6 @@
-{}
+{
+  "home": "Inicio",
+  "logout": "Cerrar sesión",
+  "loginWGoogle": "Iniciar sesión con google"
+
+}
